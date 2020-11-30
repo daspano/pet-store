@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditComponent implements OnInit {
 
+  public name: string;
+  public status: string;
+  isSubmitted = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

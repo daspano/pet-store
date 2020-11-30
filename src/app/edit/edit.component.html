@@ -1,1 +1,10 @@
 <h1>Add New Pet</h1>
+<form>
+  <input type="text" name="petName" [(ngModel)]="name">
+  <select name="pet-status" [(ngModel)]="status">
+    <option value="available">Available</option>
+    <option value="pending">Pending</option>
+    <option value="sold">Sold</option>
+  </select>
+</form>
+<a [routerLink]="['/']">Go Back</a>
