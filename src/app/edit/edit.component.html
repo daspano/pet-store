@@ -1,5 +1,5 @@
 <h1>Add New Pet</h1>
-<form #editForm="ngForm" (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit()">
   <div>
     <label for="petName">Insert Pet Name:</label>
     <input type="text" name="petName" [(ngModel)]="name">
