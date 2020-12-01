@@ -19,8 +19,8 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
-    "pets-factory": "file:../pets-factory-2.0.1.tgz",
-    "pets-list": "file:../pets-list-2.0.0.tgz",
+    "pets-factory": "git+https://github.com/daspano/lib-pets-factory.git",
+    "pets-list": "git+https://github.com/daspano/lib-pets-list.git",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
