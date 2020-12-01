@@ -3,11 +3,4 @@
 </a>
 <a [routerLink]="['/edit']">Add New Pet</a>
 <br />
-<h2>Pets List</h2>
-<h3>Select Pets Status:</h3>
-<select name="pet-status" [(ngModel)]="status">
-  <option value="available">Available</option>
-  <option value="pending">Pending</option>
-  <option value="sold">Sold</option>
-</select>
-<lib-pets-list [status]="status"></lib-pets-list>
+<container-pets-list></container-pets-list>

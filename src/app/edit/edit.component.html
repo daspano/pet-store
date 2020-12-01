@@ -1,22 +1,3 @@
 <h1>Add New Pet</h1>
-<form (ngSubmit)="onSubmit()">
-  <div>
-    <label for="petName">Insert Pet Name:</label>
-    <input type="text" name="petName" [(ngModel)]="name">
-  </div>
-  <div>
-    <label for="pet-status">New Pet Status:</label>
-    <select name="pet-status" [(ngModel)]="status">
-      <option value="available">Available</option>
-      <option value="pending">Pending</option>
-      <option value="sold">Sold</option>
-    </select>
-  </div>
-  <div>
-    <input type="submit" value="Add Pet"/>
-  </div>
-</form>
-<ng-container *ngIf="isSubmitted">
-  <lib-pets-factory [name]="name" [status]="status"></lib-pets-factory>
-</ng-container>
+<container-pets-factory></container-pets-factory>
 <a [routerLink]="['/']">Go Back</a>
