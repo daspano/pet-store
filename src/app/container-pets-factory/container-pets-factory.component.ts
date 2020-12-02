@@ -23,7 +23,7 @@ export class ContainerPetsFactoryComponent implements OnInit {
     this.isSubmitted = true;
     setTimeout(() => {
       this.router.navigate(['/home']);
-    }, 1000);
+    }, 500);
   }
 
 }

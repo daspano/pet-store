@@ -1,8 +1,13 @@
-<h2>Pets List</h2>
-<h3>Select Pets Status:</h3>
-<select name="pet-status" [(ngModel)]="status">
-  <option value="available">Available</option>
-  <option value="pending">Pending</option>
-  <option value="sold">Sold</option>
-</select>
-<lib-pets-list [status]="status"></lib-pets-list>
+<h2 class="title is-3 is-spaced">Pets List</h2>
+<h3 class="subtitle is-6">Select Pets Status:</h3>
+<div class="select is-info">
+  <select name="pet-status" [(ngModel)]="status">
+    <option value="available">Available</option>
+    <option value="pending">Pending</option>
+    <option value="sold">Sold</option>
+  </select>
+</div>
+<div class="table is-hoverable is-fullwidth">
+  <lib-pets-list [status]="status"></lib-pets-list>
+</div>
+
